@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304F0DAD29CBC5680028DAC0 /* TransactionalKeyValueStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DAC29CBC5680028DAC0 /* TransactionalKeyValueStoreApp.swift */; };
+		304F0DAF29CBC5680028DAC0 /* KeyValuesDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DAE29CBC5680028DAC0 /* KeyValuesDashboard.swift */; };
+		304F0DB129CBC56A0028DAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304F0DB029CBC56A0028DAC0 /* Assets.xcassets */; };
+		304F0DB429CBC56A0028DAC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304F0DB329CBC56A0028DAC0 /* Preview Assets.xcassets */; };
+		304F0DDB29CBC8E90028DAC0 /* KeyValuesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DDA29CBC8E90028DAC0 /* KeyValuesStorage.swift */; };
+		304F0DDD29CBCA050028DAC0 /* KeyValuesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DDC29CBCA050028DAC0 /* KeyValuesRepo.swift */; };
+		304F0DDF29CBCA1A0028DAC0 /* DefaultKeyValuesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DDE29CBCA1A0028DAC0 /* DefaultKeyValuesRepo.swift */; };
+		304F0DE129CBCA310028DAC0 /* DefaultKeyValuesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DE029CBCA300028DAC0 /* DefaultKeyValuesStorage.swift */; };
+		304F0DE329CBE39E0028DAC0 /* KeyValuesStorageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DE229CBE39E0028DAC0 /* KeyValuesStorageContainer.swift */; };
+		304F0DE829CDDBFA0028DAC0 /* TransactionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DE729CDDBFA0028DAC0 /* TransactionControl.swift */; };
+		304F0DEA29CDEA6F0028DAC0 /* CommandControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F0DE929CDEA6F0028DAC0 /* CommandControl.swift */; };
+		30C21FA329CE13A900AADC26 /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FA229CE13A900AADC26 /* LogsView.swift */; };
+		30C21FA529CE6B5D00AADC26 /* KeyValuesDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FA429CE6B5D00AADC26 /* KeyValuesDashboardViewModel.swift */; };
+		30C21FA929D1062F00AADC26 /* KeyValuesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FA829D1062F00AADC26 /* KeyValuesList.swift */; };
+		30C21FAB29D1121200AADC26 /* ActionCreationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FAA29D1121200AADC26 /* ActionCreationForm.swift */; };
+		30C21FB029D1234900AADC26 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FAF29D1234900AADC26 /* Transaction.swift */; };
+		30C21FB229D124CC00AADC26 /* KeyValuesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FB129D124CC00AADC26 /* KeyValuesContainer.swift */; };
+		30C21FB929D1304900AADC26 /* KeyValuesDashboardActionsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FB829D1304900AADC26 /* KeyValuesDashboardActionsLogger.swift */; };
+		30C21FBC29D130B000AADC26 /* DefaultActionsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FBB29D130B000AADC26 /* DefaultActionsLogger.swift */; };
+		30C21FC129D1BB5E00AADC26 /* DefaultKeyValuesStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FC029D1BB5E00AADC26 /* DefaultKeyValuesStorageTests.swift */; };
+		30C21FC429D1BBFE00AADC26 /* KeyValuesStorageContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FC329D1BBFE00AADC26 /* KeyValuesStorageContainer+Extensions.swift */; };
+		30C21FC629D1C32B00AADC26 /* DefaultKeyValuesRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FC529D1C32B00AADC26 /* DefaultKeyValuesRepoTests.swift */; };
+		30C21FC829D1C47D00AADC26 /* KeyValuesStorageSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FC729D1C47D00AADC26 /* KeyValuesStorageSpy.swift */; };
+		30C21FD329D26BEF00AADC26 /* CollapsibleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FD229D26BEF00AADC26 /* CollapsibleSection.swift */; };
+		30C21FD529D26CB900AADC26 /* KeyValuesDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C21FD429D26CB900AADC26 /* KeyValuesDebugView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		304F0DBA29CBC56A0028DAC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 304F0DA129CBC5680028DAC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304F0DA829CBC5680028DAC0;
+			remoteInfo = TransactionalKeyValueStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		304F0DA929CBC5680028DAC0 /* TransactionalKeyValueStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransactionalKeyValueStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304F0DAC29CBC5680028DAC0 /* TransactionalKeyValueStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionalKeyValueStoreApp.swift; sourceTree = "<group>"; };
+		304F0DAE29CBC5680028DAC0 /* KeyValuesDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesDashboard.swift; sourceTree = "<group>"; };
+		304F0DB029CBC56A0028DAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		304F0DB329CBC56A0028DAC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		304F0DB929CBC56A0028DAC0 /* TransactionalKeyValueStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionalKeyValueStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		304F0DDA29CBC8E90028DAC0 /* KeyValuesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesStorage.swift; sourceTree = "<group>"; };
+		304F0DDC29CBCA050028DAC0 /* KeyValuesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesRepo.swift; sourceTree = "<group>"; };
+		304F0DDE29CBCA1A0028DAC0 /* DefaultKeyValuesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeyValuesRepo.swift; sourceTree = "<group>"; };
+		304F0DE029CBCA300028DAC0 /* DefaultKeyValuesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeyValuesStorage.swift; sourceTree = "<group>"; };
+		304F0DE229CBE39E0028DAC0 /* KeyValuesStorageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesStorageContainer.swift; sourceTree = "<group>"; };
+		304F0DE729CDDBFA0028DAC0 /* TransactionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionControl.swift; sourceTree = "<group>"; };
+		304F0DE929CDEA6F0028DAC0 /* CommandControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandControl.swift; sourceTree = "<group>"; };
+		30C21FA229CE13A900AADC26 /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
+		30C21FA429CE6B5D00AADC26 /* KeyValuesDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesDashboardViewModel.swift; sourceTree = "<group>"; };
+		30C21FA829D1062F00AADC26 /* KeyValuesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesList.swift; sourceTree = "<group>"; };
+		30C21FAA29D1121200AADC26 /* ActionCreationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCreationForm.swift; sourceTree = "<group>"; };
+		30C21FAF29D1234900AADC26 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		30C21FB129D124CC00AADC26 /* KeyValuesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesContainer.swift; sourceTree = "<group>"; };
+		30C21FB829D1304900AADC26 /* KeyValuesDashboardActionsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesDashboardActionsLogger.swift; sourceTree = "<group>"; };
+		30C21FBB29D130B000AADC26 /* DefaultActionsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultActionsLogger.swift; sourceTree = "<group>"; };
+		30C21FC029D1BB5E00AADC26 /* DefaultKeyValuesStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeyValuesStorageTests.swift; sourceTree = "<group>"; };
+		30C21FC329D1BBFE00AADC26 /* KeyValuesStorageContainer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValuesStorageContainer+Extensions.swift"; sourceTree = "<group>"; };
+		30C21FC529D1C32B00AADC26 /* DefaultKeyValuesRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeyValuesRepoTests.swift; sourceTree = "<group>"; };
+		30C21FC729D1C47D00AADC26 /* KeyValuesStorageSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesStorageSpy.swift; sourceTree = "<group>"; };
+		30C21FD229D26BEF00AADC26 /* CollapsibleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleSection.swift; sourceTree = "<group>"; };
+		30C21FD429D26CB900AADC26 /* KeyValuesDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuesDebugView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		304F0DA629CBC5680028DAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304F0DB629CBC56A0028DAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304F0DA029CBC5680028DAC0 = {
+			isa = PBXGroup;
+			children = (
+				304F0DAB29CBC5680028DAC0 /* TransactionalKeyValueStore */,
+				304F0DBC29CBC56A0028DAC0 /* TransactionalKeyValueStoreTests */,
+				304F0DAA29CBC5680028DAC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		304F0DAA29CBC5680028DAC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				304F0DA929CBC5680028DAC0 /* TransactionalKeyValueStore.app */,
+				304F0DB929CBC56A0028DAC0 /* TransactionalKeyValueStoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		304F0DAB29CBC5680028DAC0 /* TransactionalKeyValueStore */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FCA29D2622800AADC26 /* Resources */,
+				30C21FCC29D262D500AADC26 /* Sources */,
+			);
+			path = TransactionalKeyValueStore;
+			sourceTree = "<group>";
+		};
+		304F0DBC29CBC56A0028DAC0 /* TransactionalKeyValueStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FCE29D2637500AADC26 /* Repos */,
+			);
+			path = TransactionalKeyValueStoreTests;
+			sourceTree = "<group>";
+		};
+		304F0DE429CBEC0C0028DAC0 /* KeyValuesRepo */ = {
+			isa = PBXGroup;
+			children = (
+				304F0DDE29CBCA1A0028DAC0 /* DefaultKeyValuesRepo.swift */,
+				304F0DDC29CBCA050028DAC0 /* KeyValuesRepo.swift */,
+				304F0DE529CBEC2A0028DAC0 /* KeyValuesStorage */,
+				304F0DE629CBEC3F0028DAC0 /* Models */,
+			);
+			path = KeyValuesRepo;
+			sourceTree = "<group>";
+		};
+		304F0DE529CBEC2A0028DAC0 /* KeyValuesStorage */ = {
+			isa = PBXGroup;
+			children = (
+				304F0DE029CBCA300028DAC0 /* DefaultKeyValuesStorage.swift */,
+				304F0DDA29CBC8E90028DAC0 /* KeyValuesStorage.swift */,
+				30C21FAE29D1228800AADC26 /* Models */,
+			);
+			path = KeyValuesStorage;
+			sourceTree = "<group>";
+		};
+		304F0DE629CBEC3F0028DAC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FB129D124CC00AADC26 /* KeyValuesContainer.swift */,
+				30C21FAF29D1234900AADC26 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30C21FAC29D116D300AADC26 /* ActionCreationForm */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FAA29D1121200AADC26 /* ActionCreationForm.swift */,
+				304F0DE929CDEA6F0028DAC0 /* CommandControl.swift */,
+			);
+			path = ActionCreationForm;
+			sourceTree = "<group>";
+		};
+		30C21FAD29D1190300AADC26 /* KeyValuesDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				304F0DAE29CBC5680028DAC0 /* KeyValuesDashboard.swift */,
+				30C21FBD29D1315700AADC26 /* ViewModel */,
+				30C21FD629D26D5000AADC26 /* Views */,
+			);
+			path = KeyValuesDashboard;
+			sourceTree = "<group>";
+		};
+		30C21FAE29D1228800AADC26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				304F0DE229CBE39E0028DAC0 /* KeyValuesStorageContainer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30C21FBA29D130A100AADC26 /* ActionsLogger */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FBB29D130B000AADC26 /* DefaultActionsLogger.swift */,
+				30C21FB829D1304900AADC26 /* KeyValuesDashboardActionsLogger.swift */,
+			);
+			path = ActionsLogger;
+			sourceTree = "<group>";
+		};
+		30C21FBD29D1315700AADC26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FA429CE6B5D00AADC26 /* KeyValuesDashboardViewModel.swift */,
+				30C21FBA29D130A100AADC26 /* ActionsLogger */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30C21FC229D1BBF200AADC26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FC329D1BBFE00AADC26 /* KeyValuesStorageContainer+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30C21FC929D1C4C400AADC26 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FC729D1C47D00AADC26 /* KeyValuesStorageSpy.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		30C21FCA29D2622800AADC26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				304F0DB329CBC56A0028DAC0 /* Preview Assets.xcassets */,
+				304F0DB029CBC56A0028DAC0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30C21FCB29D262CB00AADC26 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FAD29D1190300AADC26 /* KeyValuesDashboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		30C21FCC29D262D500AADC26 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				304F0DAC29CBC5680028DAC0 /* TransactionalKeyValueStoreApp.swift */,
+				30C21FCD29D262E400AADC26 /* Repos */,
+				30C21FCB29D262CB00AADC26 /* Scenes */,
+				30C21FD129D26BE100AADC26 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		30C21FCD29D262E400AADC26 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				304F0DE429CBEC0C0028DAC0 /* KeyValuesRepo */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		30C21FCE29D2637500AADC26 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FD029D2638F00AADC26 /* KeyValuesRepo */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		30C21FCF29D2638800AADC26 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FC029D1BB5E00AADC26 /* DefaultKeyValuesStorageTests.swift */,
+				30C21FC229D1BBF200AADC26 /* Extensions */,
+				30C21FC929D1C4C400AADC26 /* Mocks */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		30C21FD029D2638F00AADC26 /* KeyValuesRepo */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FC529D1C32B00AADC26 /* DefaultKeyValuesRepoTests.swift */,
+				30C21FCF29D2638800AADC26 /* Storage */,
+			);
+			path = KeyValuesRepo;
+			sourceTree = "<group>";
+		};
+		30C21FD129D26BE100AADC26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FD229D26BEF00AADC26 /* CollapsibleSection.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30C21FD629D26D5000AADC26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30C21FD429D26CB900AADC26 /* KeyValuesDebugView.swift */,
+				30C21FA829D1062F00AADC26 /* KeyValuesList.swift */,
+				30C21FA229CE13A900AADC26 /* LogsView.swift */,
+				304F0DE729CDDBFA0028DAC0 /* TransactionControl.swift */,
+				30C21FAC29D116D300AADC26 /* ActionCreationForm */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		304F0DA829CBC5680028DAC0 /* TransactionalKeyValueStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304F0DCD29CBC56A0028DAC0 /* Build configuration list for PBXNativeTarget "TransactionalKeyValueStore" */;
+			buildPhases = (
+				304F0DA529CBC5680028DAC0 /* Sources */,
+				304F0DA629CBC5680028DAC0 /* Frameworks */,
+				304F0DA729CBC5680028DAC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransactionalKeyValueStore;
+			productName = TransactionalKeyValueStore;
+			productReference = 304F0DA929CBC5680028DAC0 /* TransactionalKeyValueStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		304F0DB829CBC56A0028DAC0 /* TransactionalKeyValueStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304F0DD029CBC56A0028DAC0 /* Build configuration list for PBXNativeTarget "TransactionalKeyValueStoreTests" */;
+			buildPhases = (
+				304F0DB529CBC56A0028DAC0 /* Sources */,
+				304F0DB629CBC56A0028DAC0 /* Frameworks */,
+				304F0DB729CBC56A0028DAC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304F0DBB29CBC56A0028DAC0 /* PBXTargetDependency */,
+			);
+			name = TransactionalKeyValueStoreTests;
+			productName = TransactionalKeyValueStoreTests;
+			productReference = 304F0DB929CBC56A0028DAC0 /* TransactionalKeyValueStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		304F0DA129CBC5680028DAC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					304F0DA829CBC5680028DAC0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					304F0DB829CBC56A0028DAC0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 304F0DA829CBC5680028DAC0;
+					};
+				};
+			};
+			buildConfigurationList = 304F0DA429CBC5680028DAC0 /* Build configuration list for PBXProject "TransactionalKeyValueStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 304F0DA029CBC5680028DAC0;
+			productRefGroup = 304F0DAA29CBC5680028DAC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				304F0DA829CBC5680028DAC0 /* TransactionalKeyValueStore */,
+				304F0DB829CBC56A0028DAC0 /* TransactionalKeyValueStoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		304F0DA729CBC5680028DAC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304F0DB429CBC56A0028DAC0 /* Preview Assets.xcassets in Resources */,
+				304F0DB129CBC56A0028DAC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304F0DB729CBC56A0028DAC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		304F0DA529CBC5680028DAC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304F0DDD29CBCA050028DAC0 /* KeyValuesRepo.swift in Sources */,
+				304F0DEA29CDEA6F0028DAC0 /* CommandControl.swift in Sources */,
+				30C21FB029D1234900AADC26 /* Transaction.swift in Sources */,
+				304F0DDF29CBCA1A0028DAC0 /* DefaultKeyValuesRepo.swift in Sources */,
+				304F0DE829CDDBFA0028DAC0 /* TransactionControl.swift in Sources */,
+				30C21FBC29D130B000AADC26 /* DefaultActionsLogger.swift in Sources */,
+				304F0DE329CBE39E0028DAC0 /* KeyValuesStorageContainer.swift in Sources */,
+				30C21FA529CE6B5D00AADC26 /* KeyValuesDashboardViewModel.swift in Sources */,
+				30C21FAB29D1121200AADC26 /* ActionCreationForm.swift in Sources */,
+				304F0DAF29CBC5680028DAC0 /* KeyValuesDashboard.swift in Sources */,
+				30C21FD529D26CB900AADC26 /* KeyValuesDebugView.swift in Sources */,
+				304F0DDB29CBC8E90028DAC0 /* KeyValuesStorage.swift in Sources */,
+				304F0DE129CBCA310028DAC0 /* DefaultKeyValuesStorage.swift in Sources */,
+				30C21FA329CE13A900AADC26 /* LogsView.swift in Sources */,
+				30C21FB929D1304900AADC26 /* KeyValuesDashboardActionsLogger.swift in Sources */,
+				30C21FD329D26BEF00AADC26 /* CollapsibleSection.swift in Sources */,
+				304F0DAD29CBC5680028DAC0 /* TransactionalKeyValueStoreApp.swift in Sources */,
+				30C21FA929D1062F00AADC26 /* KeyValuesList.swift in Sources */,
+				30C21FB229D124CC00AADC26 /* KeyValuesContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304F0DB529CBC56A0028DAC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C21FC829D1C47D00AADC26 /* KeyValuesStorageSpy.swift in Sources */,
+				30C21FC629D1C32B00AADC26 /* DefaultKeyValuesRepoTests.swift in Sources */,
+				30C21FC129D1BB5E00AADC26 /* DefaultKeyValuesStorageTests.swift in Sources */,
+				30C21FC429D1BBFE00AADC26 /* KeyValuesStorageContainer+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		304F0DBB29CBC56A0028DAC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 304F0DA829CBC5680028DAC0 /* TransactionalKeyValueStore */;
+			targetProxy = 304F0DBA29CBC56A0028DAC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		304F0DCB29CBC56A0028DAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		304F0DCC29CBC56A0028DAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		304F0DCE29CBC56A0028DAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TransactionalKeyValueStore/Resources\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowkostkustomz.TransactionalKeyValueStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		304F0DCF29CBC56A0028DAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TransactionalKeyValueStore/Resources\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowkostkustomz.TransactionalKeyValueStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		304F0DD129CBC56A0028DAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowkostkustomz.TransactionalKeyValueStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransactionalKeyValueStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TransactionalKeyValueStore";
+			};
+			name = Debug;
+		};
+		304F0DD229CBC56A0028DAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowkostkustomz.TransactionalKeyValueStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransactionalKeyValueStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TransactionalKeyValueStore";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		304F0DA429CBC5680028DAC0 /* Build configuration list for PBXProject "TransactionalKeyValueStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304F0DCB29CBC56A0028DAC0 /* Debug */,
+				304F0DCC29CBC56A0028DAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304F0DCD29CBC56A0028DAC0 /* Build configuration list for PBXNativeTarget "TransactionalKeyValueStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304F0DCE29CBC56A0028DAC0 /* Debug */,
+				304F0DCF29CBC56A0028DAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304F0DD029CBC56A0028DAC0 /* Build configuration list for PBXNativeTarget "TransactionalKeyValueStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304F0DD129CBC56A0028DAC0 /* Debug */,
+				304F0DD229CBC56A0028DAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 304F0DA129CBC5680028DAC0 /* Project object */;
+}
